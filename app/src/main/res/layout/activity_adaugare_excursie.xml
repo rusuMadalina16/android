@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.afinal.MainActivity"
+    android:id="@+id/adaugareExcursie">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/tp" />
+
+    <EditText
+        android:id="@+id/viw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/info"
+        android:drawableLeft="@drawable/info"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/dest" />
+
+    <EditText
+        android:id="@+id/destinationn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/destin"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="10dp"
+        android:text="@string/TT" />
+
+    <RadioGroup
+        android:id="@+id/radiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/unu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City break"
+            />
+
+        <RadioButton
+            android:id="@+id/doi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See side"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/trei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mountains" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/Pret" />
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:max="100"
+        android:progress="20" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingBottom="10dp"
+                android:text="@string/Start" />
+
+            <Button
+                android:id="@+id/dataStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:padding="10dp"
+                android:hint="DD/MM/YYYY"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingBottom="10dp"
+                android:text="@string/End" />
+
+            <Button
+                android:id="@+id/dataEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:hint="DD/MM/YYYY"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/rating"
+        android:padding="10dp" />
+
+    <RatingBar
+        android:id="@+id/ratingg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:ratingBarStyle"
+        android:numStars="5"
+        android:layout_gravity="start"
+        android:rating="4"
+        android:stepSize="0.5"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"/>
+</LinearLayout>
